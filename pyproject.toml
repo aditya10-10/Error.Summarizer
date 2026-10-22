@@ -1,0 +1,24 @@
+[project]
+name = "error-summarizer"
+version = "1.0.0"
+description = "Create concise, optionally AI-assisted summaries from task failure exports."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "langchain-google-genai>=3.0,<4.0",
+  "python-dotenv>=1.0,<2.0",
+]
+
+[project.scripts]
+error-summarizer = "error_summarizer.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

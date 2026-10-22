@@ -1,0 +1,6 @@
+failures.txt
+output.txt
+.env
+.venv/
+__pycache__/
+.pytest_cache/
